@@ -1,9 +1,7 @@
-
 import pandas as pd
 import numpy as np
 import streamlit as st
 import altair as alt
-import psycopg2
 import postgres_connect
 sql="select * from data_training_2.cars"
 data=pd.DataFrame(postgres_connect.runquery(sql))
